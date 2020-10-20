@@ -46,7 +46,7 @@ constant: STORES_TABLE_NAME {
 }
 
 constant: CONFIG_PROJECT_NAME {
-  value: "retail-block-config"
+  value: "block-retail-config"
   export: override_required
 }
 

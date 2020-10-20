@@ -28,7 +28,7 @@
   "auxiliary_projects": [
     {
       "git_uri": "git://github.com/looker/block-retail-config.git",
-      "git_ref": "a321a42f6b464023e0a15937fac104e851eaec93",
+      "git_ref": "7ec72270a044608d3dfb0c8bbbcd313398d44df7",
       "label": "Retail Block Config",
       "constant_name": "CONFIG_PROJECT_NAME"
     }

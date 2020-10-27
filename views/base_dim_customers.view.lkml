@@ -26,12 +26,6 @@ view: customers_core {
     }
   }
 
-  dimension: city {
-    type: string
-    group_label: "Address Info"
-    sql: ${TABLE}.CITY ;;
-  }
-
   dimension: country {
     type: string
     group_label: "Address Info"
@@ -53,30 +47,6 @@ view: customers_core {
     sql: ${TABLE}.CREATED_AT ;;
   }
 
-  dimension: email {
-    hidden: yes
-    type: string
-    group_label: "Address Info"
-    sql: ${TABLE}.EMAIL ;;
-  }
-
-  dimension: first_name {
-    type: string
-    hidden: yes
-    sql: ${TABLE}.FIRST_NAME ;;
-  }
-
-  dimension: gender {
-    type: string
-    sql: ${TABLE}.GENDER ;;
-  }
-
-  dimension: last_name {
-    type: string
-    hidden: yes
-    sql: ${TABLE}.LAST_NAME ;;
-  }
-
   dimension: latitude {
     hidden: yes
     type: number
@@ -89,29 +59,7 @@ view: customers_core {
     sql: ${TABLE}.LONGITUDE ;;
   }
 
-  dimension: state {
-    type: string
-    group_label: "Address Info"
-    sql: ${TABLE}.STATE ;;
-  }
-
-  dimension: traffic_source {
-    type: string
-    sql: ${TABLE}.TRAFFIC_SOURCE ;;
-  }
-
-  dimension: postcode {
-    type: zipcode
-    group_label: "Address Info"
-    sql: ${TABLE}.ZIP ;;
-  }
-
   ##### CUSTOM DIMENSIONS #####
-
-  dimension: name {
-    type: string
-    sql: CONCAT(${first_name}, " ", ${last_name}) ;;
-  }
 
   dimension: location {
     type: location
@@ -124,7 +72,7 @@ view: customers_core {
     type: string
     group_label: "Address Info"
     sql: ${address} ;;
-    html: <img src="https://maps.googleapis.com/maps/api/streetview?size=700x400&location={{value | encode_uri}}&fov=120&key=AIzaSyD7BvCbKqjStBl7r6AmDu1p8yGF-IxtFLs" ;;
+    html: <img src="https://maps.googleapis.com/maps/api/streetview?size=700x400&location={{value | encode_uri}}&fov=120&key=@{GOOGLE_MAPS_API_KEY}" ;;
   }
 
   filter: address_comparison_filter {

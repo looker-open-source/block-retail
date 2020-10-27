@@ -60,6 +60,11 @@ constant: IMAGE_SEARCH_URL {
   export: override_required
 }
 
+constant: GOOGLE_MAPS_API_KEY {
+  value: "xxxxxxxx"
+  export: override_required
+}
+
 ################ Dependencies ################
 
 local_dependency: {
@@ -99,5 +104,9 @@ local_dependency: {
 
   override_constant: IMAGE_SEARCH_URL {
     value: "@{IMAGE_SEARCH_URL}"
+  }
+
+  override_constant: GOOGLE_MAPS_API_KEY {
+    value: "@{GOOGLE_MAPS_API_KEY}"
   }
 }

@@ -1,4 +1,4 @@
-# Looker Retail Application
+# Looker Retail Block
 
 ## What does this block do for me?
 

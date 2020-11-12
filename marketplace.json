@@ -2,7 +2,7 @@
   "label": "Retail Analytics Block",
   "category_label": "Models",
   "branding": {
-    "image_uri": "https://marketplace-api.looker.com/block-icons/bq_icon.png",
+    "image_uri": "https://marketplace-api.looker.com/block-icons/retail-placeholder.png",
     "badge": "Beta",
     "tagline": "Get a comprehensive overview of your group and store performance, your customer behaviour, your basket dynamics, and which customer segments or product bundles to promote."
   },

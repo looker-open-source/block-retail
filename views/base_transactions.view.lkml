@@ -67,7 +67,7 @@ view: transactions_core {
     type: duration
     intervals: [month]
     sql_start: ${customer_facts.customer_first_purchase_raw} ;;
-    sql_end: ${transaction_raw}) ;;
+    sql_end: ${transaction_raw} ;;
   }
 
   dimension: is_customer {

@@ -25,7 +25,7 @@ view: store_weather_core {
     cluster_keys: ["store_id"]
     # requires ID, latitude, longitude columns in stores table
       # TO DO: add 2021 table once available in BQ public dataset
-    sql: , weather_raw AS (SELECT id,date,element,value,mflag,qflag,sflag,time FROM `@{WEATHER_SCHEMA_NAME}.ghcnd_2020`
+    sql: , weather_raw AS (SELECT id,date,element,value,mflag,qflag,sflag,time FROM `@{WEATHER_SCHEMA_NAME}.ghcnd_20*`
         UNION ALL SELECT id,date,element,value,mflag,qflag,sflag,time FROM `@{WEATHER_SCHEMA_NAME}.ghcnd_2019`
         UNION ALL SELECT id,date,element,value,mflag,qflag,sflag,time FROM `@{WEATHER_SCHEMA_NAME}.ghcnd_2018`
         UNION ALL SELECT id,date,element,value,mflag,qflag,sflag,time FROM `@{WEATHER_SCHEMA_NAME}.ghcnd_2017`

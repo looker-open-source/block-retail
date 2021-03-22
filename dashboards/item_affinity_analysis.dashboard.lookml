@@ -1,4 +1,5 @@
 - dashboard: item_affinity_analysis
+  preferred_viewer: dashboards-next
   title: Item Affinity Analysis
   layout: newspaper
   elements:

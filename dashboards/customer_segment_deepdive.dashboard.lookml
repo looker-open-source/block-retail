@@ -1,7 +1,7 @@
 - dashboard: customer_segment_deepdive
+  preferred_viewer: dashboards-next
   title: Customer Segment Deep-dive
   layout: newspaper
-  preferred_viewer: dashboards
   elements:
   - title: Sales
     name: Sales

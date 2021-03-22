@@ -1,7 +1,7 @@
 - dashboard: store_deepdive
   title: Store Deep-dive
   layout: newspaper
-  preferred_viewer: dashboards
+  preferred_viewer: dashboards-next
   elements:
   - title: Sales
     name: Sales

@@ -1,4 +1,5 @@
 - dashboard: address_deepdive
+  preferred_viewer: dashboards-next
   title: Address Deep-dive
   layout: newspaper
   elements:

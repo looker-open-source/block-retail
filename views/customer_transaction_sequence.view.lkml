@@ -1,5 +1,3 @@
-include: "//@{CONFIG_PROJECT_NAME}/derived_views/customer_transaction_sequence.view"
-
 view: customer_transaction_sequence_base {
   derived_table: {
     explore_source: transactions {
@@ -20,9 +18,6 @@ view: customer_transaction_sequence_base {
 }
 
 view: customer_transaction_sequence {
-  extends: [customer_transaction_sequence_config]
-}
-view: customer_transaction_sequence_core {
   label: "Customer Transaction Sequence ➡️"
   derived_table: {
     sql: SELECT customer_id, transaction_timestamp, category_list, transaction_sequence

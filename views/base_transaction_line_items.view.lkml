@@ -1,10 +1,4 @@
-include: "//@{CONFIG_PROJECT_NAME}/views/base_transactions_line_items.view"
-
 view: transactions__line_items {
-  extends: [transactions__line_items_config]
-}
-
-view: transactions__line_items_core {
   label: "Transactions"
 
   dimension: product_id {

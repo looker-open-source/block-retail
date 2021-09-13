@@ -1,4 +1,3 @@
-include: "//@{CONFIG_PROJECT_NAME}/derived_views/customer_clustering.view"
 include: "./customer_facts.view"
 
 view: customer_clustering_input {
@@ -33,9 +32,6 @@ view: customer_clustering_prediction_base {
 }
 
 view: customer_clustering_prediction {
-  extends: [customer_clustering_prediction_config]
-}
-view: customer_clustering_prediction_core {
   derived_table: {
     datagroup_trigger: monthly
     sql: WITH customer_clustering_prediction_aggregates AS (SELECT
@@ -84,7 +80,7 @@ view: customer_clustering_prediction_core {
     type: string
     sql: ${TABLE}.customer_segment ;;
     link: {
-      url: "/dashboards/retail_block_model::customer_segment_deepdive?Customer%20Segment={{value | encode_uri}}&Date%20Range={{ _filters['transactions.date_comparison_filter'] | url_encode }}"
+      url: "/dashboards/retail_block_model_v2::customer_segment_deepdive?Customer%20Segment={{value | encode_uri}}&Date%20Range={{ _filters['transactions.date_comparison_filter'] | url_encode }}"
       label: "Drill into {{rendered_value}}"
     }
   }

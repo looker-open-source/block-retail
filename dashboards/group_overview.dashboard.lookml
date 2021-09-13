@@ -5,7 +5,7 @@
   elements:
   - title: Sales
     name: Sales
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: transactions
     type: single_value
     fields: [transactions.selected_comparison, transactions__line_items.total_sales,
@@ -42,7 +42,7 @@
     height: 2
   - title: Transactions
     name: Transactions
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: transactions
     type: single_value
     fields: [transactions.selected_comparison, transactions__line_items.total_sales,
@@ -78,7 +78,7 @@
     height: 2
   - title: Basket Size
     name: Basket Size
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: transactions
     type: single_value
     fields: [transactions.selected_comparison, transactions__line_items.total_sales,
@@ -114,7 +114,7 @@
     height: 2
   - title: "% Trx from Loyalty"
     name: "% Trx from Loyalty"
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: transactions
     type: single_value
     fields: [transactions.selected_comparison, transactions__line_items.total_sales,
@@ -150,7 +150,7 @@
     height: 2
   - title: Store Overview
     name: Store Overview
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: transactions
     type: looker_map
     fields: [stores.location, transactions__line_items.total_sales, transactions.number_of_transactions,
@@ -195,7 +195,7 @@
     height: 9
   - title: Change by Category
     name: Change by Category
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: transactions
     type: looker_bar
     fields: [transactions__line_items.sales_change, products.category]
@@ -323,7 +323,7 @@
     height: 2
   - title: Sales YoY Trends
     name: Sales YoY Trends
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: transactions
     type: looker_line
     fields: [transactions__line_items.total_sales, transactions.transaction_month_num,
@@ -372,7 +372,7 @@
     height: 9
   - title: New Joiners 🌟
     name: New Joiners 🌟
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: transactions
     type: single_value
     fields: [transactions.selected_comparison, transactions__line_items.total_sales,
@@ -411,7 +411,7 @@
     height: 4
   - title: Mid-tier Customers 🏪
     name: Mid-tier Customers 🏪
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: transactions
     type: single_value
     fields: [transactions.selected_comparison, transactions__line_items.total_sales,
@@ -447,7 +447,7 @@
     height: 5
   - title: Loyal Customers 🛒
     name: Loyal Customers 🛒
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: transactions
     type: single_value
     fields: [transactions.selected_comparison, transactions__line_items.total_sales,
@@ -483,7 +483,7 @@
     height: 5
   - title: Big-basket Shoppers 📦
     name: Big-basket Shoppers 📦
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: transactions
     type: single_value
     fields: [transactions.selected_comparison, transactions__line_items.total_sales,
@@ -519,7 +519,7 @@
     height: 4
   - title: How well are we retaining these customer segments?
     name: How well are we retaining these customer segments?
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: transactions
     type: looker_line
     fields: [customer_clustering_prediction.customer_segment, transactions.number_of_customers,
@@ -591,7 +591,7 @@
     height: 9
   - title: Change by Store - Top Movers
     name: Change by Store - Top Movers
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: transactions
     type: looker_bar
     fields: [stores.name, transactions__line_items.sales_change]

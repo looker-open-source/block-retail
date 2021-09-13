@@ -5,7 +5,7 @@
   elements:
   - title: Location
     name: Location
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: transactions
     type: looker_map
     fields: [customers.location]
@@ -45,7 +45,7 @@
     height: 6
   - title: Address Street View
     name: Address Street View
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: transactions
     type: single_value
     fields: [customers.address_street_view]
@@ -63,7 +63,7 @@
     height: 10
   - title: Registered customers at this address
     name: Registered customers at this address
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: transactions
     type: single_value
     fields: [customers.address_comparison, transactions__line_items.number_of_customers_per_address]
@@ -99,7 +99,7 @@
     height: 4
   - title: Order Pattern
     name: Order Pattern
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: transactions
     type: looker_line
     fields: [transactions.transaction_date, transactions__line_items.total_quantity,
@@ -163,7 +163,7 @@
     height: 8
   - title: Most Ordered Items
     name: Most Ordered Items
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: transactions
     type: looker_grid
     fields: [transactions__line_items.total_quantity, transactions__line_items.average_item_price,
@@ -255,7 +255,7 @@
     default_value: '"1909 W 95th St, Chicago, IL 60643, United States"'
     allow_multiple_values: true
     required: false
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: transactions
     listens_to_filters: []
     field: customers.address

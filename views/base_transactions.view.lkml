@@ -1,11 +1,6 @@
 include: "date_comparison.view.lkml"
-include: "//@{CONFIG_PROJECT_NAME}/views/base_transactions.view"
 
 view: transactions {
-  extends: [transactions_config]
-}
-
-view: transactions_core {
   sql_table_name: `@{SCHEMA_NAME}.@{TRANSACTIONS_TABLE_NAME}` ;;
   extends: [date_comparison]
 

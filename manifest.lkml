@@ -6,8 +6,7 @@ project_name: "retail-block"
 ################ Constants ################
 
 constant: CONNECTION_NAME {
-  value: "4mile_bigquery"
-  # value: "retail-block-connection"
+  value: "retail-block-connection"
   export: override_optional
 }
 

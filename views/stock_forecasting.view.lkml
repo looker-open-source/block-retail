@@ -1,10 +1,4 @@
-include: "//@{CONFIG_PROJECT_NAME}/derived_views/stock_forecasting.view"
-
 view: stock_forecasting_explore_base {
-  extends: [stock_forecasting_explore_base_config]
-}
-
-view: stock_forecasting_explore_base_core {
   view_label: "Stock Forecasting 🏭"
   derived_table: {
     explore_source: transactions {
@@ -49,7 +43,7 @@ view: stock_forecasting_explore_base_core {
     link: {
       label: "Drive attachments for {{rendered_value}}"
       icon_url: "https://i.imgur.com/W4tVGrj.png"
-      url: "/dashboards/retail_block_model::item_affinity_analysis?Focus%20Product={{value | encode_uri}}&Minimum%20Purchase%20Frequency="
+      url: "/dashboards/retail_block_model_v2::item_affinity_analysis?Focus%20Product={{value | encode_uri}}&Minimum%20Purchase%20Frequency="
     }
   }
   dimension: product_name_for_join {

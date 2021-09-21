@@ -5,7 +5,7 @@
   elements:
   - title: Sales
     name: Sales
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: transactions
     type: single_value
     fields: [transactions.selected_comparison, transactions__line_items.total_sales,
@@ -42,7 +42,7 @@
     height: 2
   - title: Transactions
     name: Transactions
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: transactions
     type: single_value
     fields: [transactions.selected_comparison, transactions__line_items.total_sales,
@@ -79,7 +79,7 @@
     height: 2
   - title: Basket Size
     name: Basket Size
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: transactions
     type: single_value
     fields: [transactions.selected_comparison, transactions__line_items.total_sales,
@@ -116,7 +116,7 @@
     height: 2
   - title: Quantity
     name: Quantity
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: transactions
     type: single_value
     fields: [transactions.selected_comparison, transactions__line_items.total_sales,
@@ -153,7 +153,7 @@
     height: 2
   - title: Customer Segment
     name: Customer Segment
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: customer_clustering_prediction
     type: single_value
     fields: [customer_clustering_prediction.customer_segment_basic_dim]
@@ -192,7 +192,7 @@
     height: 8
   - title: Customers for Reactivation Campaign
     name: Customers for Reactivation Campaign
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: transactions
     type: looker_grid
     fields: [customer_facts.customer_id, customer_facts.customer_spend_trend_past_year]
@@ -238,7 +238,7 @@
     height: 8
   - title: Potential Value from 10% Reactivation
     name: Potential Value from 10% Reactivation
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: transactions
     type: single_value
     fields: [transactions__line_items.total_sales]
@@ -319,7 +319,7 @@
     height: 2
   - title: Customer Coverage - Favorite Store
     name: Customer Coverage - Favorite Store
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: transactions
     type: looker_map
     fields: [transactions__line_items.total_sales, customer_favorite_store_details.location,
@@ -364,7 +364,7 @@
     height: 8
   - title: Customer Journey
     name: Customer Journey
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: transactions
     type: marketplace_viz_sankey::sankey-marketplace
     fields: [customer_transaction_sequence.main_product_category_transaction_1, customer_transaction_sequence.main_product_category_transaction_2,
@@ -427,7 +427,7 @@
     ui_config:
       type: advanced
       display: popover
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: transactions
     listens_to_filters: []
     field: customer_clustering_prediction.customer_segment

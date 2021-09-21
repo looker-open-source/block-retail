@@ -14,23 +14,12 @@
     },
     "SCHEMA_NAME": {
       "label": "Schema Name"
-    },
-    "CONFIG_PROJECT_NAME": {
-      "label": "Config Project Name"
     }
   },
   "models": [
     {
-      "name": "retail_block_model",
+      "name": "retail_block_model_v2",
       "connection_constant": "CONNECTION_NAME"
-    }
-  ],
-  "auxiliary_projects": [
-    {
-      "git_uri": "git://github.com/looker/block-retail-config.git",
-      "git_ref": "4f986d3b79507b442ece0cffa35b0da8e1dcca3a",
-      "label": "Retail Block Config",
-      "constant_name": "CONFIG_PROJECT_NAME"
     }
   ]
 }

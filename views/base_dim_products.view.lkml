@@ -1,10 +1,4 @@
-include: "//@{CONFIG_PROJECT_NAME}/views/base_products.view"
-
 view: products {
-  extends: [products_config]
-}
-
-view: products_core {
   label: "Products 📦"
   sql_table_name: `@{SCHEMA_NAME}.@{PRODUCTS_TABLE_NAME}` ;;
   drill_fields: [id]
@@ -29,7 +23,7 @@ view: products_core {
     link: {
       label: "{{value}} Item Dynamics"
       icon_url: "https://i.imgur.com/W4tVGrj.png"
-      url: "/dashboards/retail_block_model::item_affinity_analysis?Focus%20Category={{value | encode_uri}}&Minimum%20Purchase%20Frequency="
+      url: "/dashboards/retail_block_model_v2::item_affinity_analysis?Focus%20Category={{value | encode_uri}}&Minimum%20Purchase%20Frequency="
     }
   }
 
@@ -40,7 +34,7 @@ view: products_core {
     link: {
       label: "Drive attachments for {{rendered_value}}"
       icon_url: "https://i.imgur.com/W4tVGrj.png"
-      url: "/dashboards/retail_block_model::item_affinity_analysis?Focus%20Product={{value | encode_uri}}&Minimum%20Purchase%20Frequency="
+      url: "/dashboards/retail_block_model_v2::item_affinity_analysis?Focus%20Product={{value | encode_uri}}&Minimum%20Purchase%20Frequency="
     }
   }
 

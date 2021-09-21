@@ -1,5 +1,3 @@
-include: "//@{CONFIG_PROJECT_NAME}/derived_views/store_weather.view"
-
 view: store_weather_stores_base {
   derived_table: {
     explore_source: transactions {
@@ -15,9 +13,6 @@ view: store_weather_stores_base {
 }
 
 view: store_weather {
-  extends: [store_weather_config]
-}
-view: store_weather_core {
   label: "Store Weather ⛅"
   derived_table: {
     datagroup_trigger: daily

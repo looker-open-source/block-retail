@@ -1,10 +1,4 @@
-include: "//@{CONFIG_PROJECT_NAME}/views/base_stores.view"
-
 view: stores {
-  extends: [stores_config]
-}
-
-view: stores_core {
   label: "Stores 🏪"
   sql_table_name: `@{SCHEMA_NAME}.@{STORES_TABLE_NAME}` ;;
 
@@ -33,7 +27,7 @@ view: stores_core {
     type: string
     sql: ${TABLE}.NAME ;;
     link: {
-      url: "/dashboards/retail_block_model::store_deepdive?Date={{ _filters['transactions.date_comparison_filter'] | url_encode }}&Store={{value | encode_uri}}"
+      url: "/dashboards/retail_block_model_v2::store_deepdive?Date={{ _filters['transactions.date_comparison_filter'] | url_encode }}&Store={{value | encode_uri}}"
       label: "Drill down into {{rendered_value}}"
     }
   }

@@ -5,7 +5,7 @@
   elements:
   - title: Product Segmentation
     name: Product Segmentation
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: order_purchase_affinity
     type: looker_scatter
     fields: [order_purchase_affinity.product_a_average_rest_of_basket_margin, order_purchase_affinity.product_a_order_frequency,
@@ -64,7 +64,7 @@
     height: 8
   - title: What are my most popular and margin-generating items?
     name: What are my most popular and margin-generating items?
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: order_purchase_affinity
     type: table
     fields: [order_purchase_affinity.product_a, order_purchase_affinity.product_a_average_rest_of_basket_margin,
@@ -128,7 +128,7 @@
     height: 8
   - title: Proposed Attachments
     name: Proposed Attachments
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: order_purchase_affinity
     type: looker_scatter
     fields: [order_purchase_affinity.product_b, order_purchase_affinity.product_b_average_rest_of_basket_margin,
@@ -205,7 +205,7 @@
       check?
     name: What items go well with the focus product and drive the biggest combined
       check?
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: order_purchase_affinity
     type: table
     fields: [order_purchase_affinity.product_b, order_purchase_affinity.product_b_average_rest_of_basket_margin,
@@ -275,7 +275,7 @@
     height: 10
   - title: Focus Product
     name: Focus Product
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: order_purchase_affinity
     type: single_value
     fields: [order_purchase_affinity.product_a]
@@ -366,7 +366,7 @@
     height: 2
   - title: Product Rationalisation
     name: Product Rationalisation
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: order_purchase_affinity
     type: table
     fields: [order_purchase_affinity.product_a, order_purchase_affinity.product_a_order_frequency,
@@ -448,7 +448,7 @@
     height: 11
   - title: Margin Uplift from Top 5 Promotions in Category
     name: Margin Uplift from Top 5 Promotions in Category
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: order_purchase_affinity
     type: single_value
     fields: [order_purchase_affinity.product_b, order_purchase_affinity.product_a_total_margin,
@@ -580,7 +580,7 @@
     default_value: product
     allow_multiple_values: true
     required: false
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: order_purchase_affinity
     listens_to_filters: []
     field: order_items_base.product_level
@@ -596,7 +596,7 @@
     default_value: ''
     allow_multiple_values: true
     required: false
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: order_purchase_affinity
     listens_to_filters: []
     field: order_purchase_affinity.product_a
@@ -612,7 +612,7 @@
     default_value: ''
     allow_multiple_values: true
     required: false
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: order_purchase_affinity
     listens_to_filters: []
     field: order_purchase_affinity.product_a_category

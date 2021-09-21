@@ -1,9 +1,4 @@
-include: "//@{CONFIG_PROJECT_NAME}/derived_views/customer_facts.view"
 include: "./base_dim_stores.view"
-
-view: customer_facts {
-  extends: [customer_facts_config]
-}
 
 view: customer_store_sales {
   derived_table: {
@@ -40,7 +35,7 @@ view: customer_favorite_store_details {
   dimension: name {group_label: "Customer Favorite Store"}
 }
 
-view: customer_facts_core {
+view: customer_facts {
   view_label: "Customers 👥"
   derived_table: {
     datagroup_trigger: weekly

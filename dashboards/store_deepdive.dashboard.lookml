@@ -5,7 +5,7 @@
   elements:
   - title: Sales
     name: Sales
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: transactions
     type: single_value
     fields: [transactions.selected_comparison, transactions__line_items.total_sales,
@@ -43,7 +43,7 @@
     height: 4
   - title: Transactions
     name: Transactions
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: transactions
     type: single_value
     fields: [transactions.selected_comparison, transactions__line_items.total_sales,
@@ -80,7 +80,7 @@
     height: 4
   - title: Basket Size
     name: Basket Size
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: transactions
     type: single_value
     fields: [transactions.selected_comparison, transactions__line_items.total_sales,
@@ -117,7 +117,7 @@
     height: 4
   - title: "% Trx from Loyalty"
     name: "% Trx from Loyalty"
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: transactions
     type: single_value
     fields: [transactions.selected_comparison, transactions__line_items.total_sales,
@@ -177,7 +177,7 @@
     height: 4
   - title: YoY Sales
     name: YoY Sales
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: transactions
     type: looker_bar
     fields: [transactions__line_items.sales_change, transactions.number_of_transactions_change,
@@ -293,7 +293,7 @@
     height: 8
   - title: YoY Transaction Count
     name: YoY Transaction Count
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: transactions
     type: looker_bar
     fields: [stores.store_comparison_vs_stores_in_tier_with_weather, transactions__line_items.sales_change,
@@ -408,7 +408,7 @@
     height: 4
   - title: Weather Trend vs Sales Trend
     name: Weather Trend vs Sales Trend
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: transactions
     type: looker_line
     fields: [store_weather.average_max_temperature, transactions.transaction_date,
@@ -532,7 +532,7 @@
     height: 7
   - title: Weather Trend vs Sales Trend - Peer Stores
     name: Weather Trend vs Sales Trend - Peer Stores
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: transactions
     type: looker_line
     fields: [store_weather.average_max_temperature, transactions.transaction_date,
@@ -656,7 +656,7 @@
     height: 7
   - title: New Joiners 🌟
     name: New Joiners 🌟
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: transactions
     type: single_value
     fields: [transactions.selected_comparison, transactions__line_items.total_sales,
@@ -693,7 +693,7 @@
     height: 4
   - title: Loyal Customers 🛒
     name: Loyal Customers 🛒
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: transactions
     type: single_value
     fields: [transactions.selected_comparison, transactions__line_items.total_sales,
@@ -730,7 +730,7 @@
     height: 5
   - title: Mid-tier Customers 🏪
     name: Mid-tier Customers 🏪
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: transactions
     type: single_value
     fields: [transactions.selected_comparison, transactions__line_items.total_sales,
@@ -770,7 +770,7 @@
     height: 5
   - title: Main Over-/Under- Stocked Products
     name: Main Over-/Under- Stocked Products
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: stock_forecasting_explore_base
     type: looker_grid
     fields: [stock_forecasting_explore_base.product_name, stock_forecasting_explore_base.total_quantity,
@@ -823,7 +823,7 @@
     height: 8
   - title: Total Value of Missing Stock
     name: Total Value of Missing Stock
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: stock_forecasting_explore_base
     type: single_value
     fields: [stock_forecasting_explore_base.total_quantity, stock_forecasting_prediction.forecasted_quantity,
@@ -883,7 +883,7 @@
     height: 4
   - title: Total Value of Overstock
     name: Total Value of Overstock
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: stock_forecasting_explore_base
     type: single_value
     fields: [stock_forecasting_explore_base.total_quantity, stock_forecasting_prediction.forecasted_quantity,
@@ -942,7 +942,7 @@
     height: 4
   - title: How well am I selling products that are doing well in my peer stores?
     name: How well am I selling products that are doing well in my peer stores?
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: transactions
     type: table
     fields: [stores.store_comparison_vs_tier, transactions__line_items.total_quantity_per_store,
@@ -1067,7 +1067,7 @@
     height: 10
   - title: How well am I gaining key customer segments vs peer stores?
     name: How well am I gaining key customer segments vs peer stores?
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: transactions
     type: looker_bar
     fields: [stores.store_comparison_vs_tier, transactions.number_of_transactions_change,
@@ -1188,7 +1188,7 @@
     height: 9
   - title: Big-basket Shoppers 📦
     name: Big-basket Shoppers 📦
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: transactions
     type: single_value
     fields: [transactions.selected_comparison, transactions__line_items.total_sales,
@@ -1242,7 +1242,7 @@
     ui_config:
       type: advanced
       display: popover
-    model: retail_block_model
+    model: retail_block_model_v2
     explore: transactions
     listens_to_filters: []
     field: stores.name

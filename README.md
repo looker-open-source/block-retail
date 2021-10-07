@@ -73,6 +73,6 @@ As a category or store manager:
   - WEATHER_SCHEMA_NAME: the [project.dataset] where BigQuery's public global GHCN weather data is stored. If your BigQuery data is in the US GCP region, simply enter `bigquery-public-data.ghcn_d`. Otherwise, you may have to set up a data transfer to an EU dataset (quick and simple, but the data will then not be free to query), or leave blank to ignore
   - IMAGE_SEARCH_URL: if you do not have images of you products in your database, this block offers you the possibility to include them using the [Google Images API](https://discourse.looker.com/t/using-google-images-api-in-looker/3685). The value to input here is your Google Images API URL as per the linked instructions. Leave blank to ignore.
   - GOOGLE_MAPS_API_KEY: for the address deep-dive dashboard. Leave blank to ignore.
-3. Open the block config project in the Develop menu
-4. Replace the key columns listed in the base_* views in the views/ folder. You can also add your own custom fields, or additional columns you have in your tables, in these files.
-5. Access the block from the LookML dashboards folder (/folders/lookml). You can customise these dashboards by copying them into one of your instances folders
+3. This block uses refinements for customization. For more information on using refinements to customize marketplace blocks, please see [this documentation](https://docs.looker.com/data-modeling/marketplace/customize-blocks).
+4. Suggested: Use Refine to replace/update the key columns listed in the base_* views in the views/ folder. You can also add your own custom fields, or additional columns you have in your tables, with refinements.
+5. Access the Block's LookML Dashboards from the LookML dashboards folder (/folders/lookml). You can customise these dashboards by copying them into one of your instance's folders.

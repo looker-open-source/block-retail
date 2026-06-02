@@ -1,5 +1,7 @@
 # Looker Retail Block
 
+This is not an officially supported Google product. This project is not eligible for the [Google Open Source Software Vulnerability Rewards Program](https://bughunters.google.com/open-source-security).
+
 ## What does this block do for me?
 
 The retail application connects directly to your transaction-item-level table to deliver dashboards and insights that are useful to various teams in a retail organisation:
